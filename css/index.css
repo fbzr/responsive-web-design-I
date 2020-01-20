@@ -307,7 +307,6 @@ footer p {
 
 .about-container header {
 	padding: 0;
-	/* display: block; */
 }
 
 header img {
@@ -315,6 +314,10 @@ header img {
 	object-position: center;
 	height: 275px;
 	width: 100%;
+}
+
+.team-container hr {
+	display: none;
 }
 
 #team img {
@@ -359,7 +362,6 @@ header img {
 @media screen and (max-width: 800px) {
     /* index.html */
     hr {
-        color: #000;
         border-color: #000;
     }
     nav {
@@ -485,7 +487,67 @@ header img {
 
     #facts .img-container {
         display: none;
-    }
+	}
+	
+	/* about.html */
+	.about-container {
+		margin-top: 5%;
+	}
+
+	.about-container header img {
+		height: 87px;
+	}
+
+	#team {
+		margin-top: 30px;
+	}
+
+	#team h2 {
+		text-align: center;
+	}
+
+	.team-leader {
+		position: relative;
+		/* margin-top: 50px; */
+	}
+
+	.team-leader img {
+		position: absolute;
+		width: 130px;
+		height: 130px;
+		right: 10%;
+		top: 2%;
+	}
+
+	.team-leader p {
+		margin-top: 30px;
+	}
+
+	#team .member-description {
+		flex-basis: 100%;
+	}
+
+	.team-member {
+		flex-wrap: wrap;
+	}
+	.row-reverse {
+		flex-direction: row;
+	}
+
+	.team-member img {
+		width: 120px;
+		height: 120px;
+		margin-bottom: 50px;
+	}
+
+	.team-container hr {
+		display: block;
+	}
+
+	.team-container hr {
+		border-color: transparent;
+		border-top-color: #ccc;
+	}
 }
 
 
