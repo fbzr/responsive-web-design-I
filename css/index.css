@@ -303,26 +303,6 @@ footer p {
 	margin: 10px 0;
 }
 
-/* Services page - MOBILE */
-@media only screen 
-  /* and (min-device-width: 320px)  */
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-	.service-card {
-		flex-basis: auto;
-	}
-
-	#facts {
-		flex-wrap: wrap;
-	}
-
-	#facts div {
-		flex-basis: 100%;
-	}
-
-}
-
 /* About page */
 
 .about-container header {
@@ -388,8 +368,10 @@ footer p {
 	width: 200px;
 }
 
-
-
+/* MOBILE */
+@media screen and (max-width: 400px) {
+    
+}
 
 
 
