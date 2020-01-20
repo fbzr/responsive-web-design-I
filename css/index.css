@@ -1,3 +1,395 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	margin: 0 70px;
+	padding-top: 70px;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	/* Set the same padding on the sides of the content of the page */
+	padding: 0 70px;
+	background-color: #fff;
+	z-index: 150;
+	transition: background-color 400ms linear;
+}
+
+#navbar.scrolled {
+	background-color: #9ff7ed !important;
+	transition: background-color 400ms linear;
+}
+
+.nav-container {
+	width: 100%;
+	position: relative;
+	height: 70px;
+	display: flex;
+	align-items: center;
+}
+
+/* Vertically center the div with all the nav links */
+.nav-link {
+	text-decoration: none;
+	color: #999;
+	transition: background-color 300ms;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+nav .nav-link:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+/* Vertically center the div with the logo and shit it to the right */
+.nav-logo {
+	background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 100%;
+	width: 100%;
+	padding-left: 8%;
+}
+
+/* Add hover effect */
+.home-container header a:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+header, footer {
+	position: relative;
+	padding: 4% 0;
+}
+
+.home-container header {
+	display: flex;
+	height: 500px;
+}
+
+.home-container header div {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-text {
+	flex-direction: column;
+	text-align: center;
+}
+
+.header-image {
+    background-image: url(../img/header-img.png);
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left;
+}
+
+header h1 {
+	font-size: 60px;
+}
+
+header a {
+	padding: 5px 40px;
+    background-color: #fff;
+	border: solid 1px #000;
+	text-decoration: none;
+	color: #000;
+
+	transition: background-color 300ms;
+}
+
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-container .two-columns {
+	flex-basis: 47%;
+}
+
+.flex-container .three-columns {
+	flex-basis: 30%;
+}
+
+.padding-top {
+	padding: 4% 0;
+}
+
+
+.middle-img {
+	width: 100%;
+	height: 250px;
+	background-image: url(../img/mid-page-accent.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact p {
+	margin-bottom: 15px; 
+}
+
+footer p {
+	text-align: center;
+}
+
+/* Services page */
+.services-header-img {
+	width: 100%;
+}
+
+.services-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.service-card {
+	flex-basis: 47%;
+	
+	background-color: #f4f3f4;
+	border: solid black 1px;
+	margin: 30px 0;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.learn-more-btn {
+	text-decoration: none;
+	font-size: 14px;
+	background-color: #fff;
+	color: #000;
+	padding: 10px 0;
+	width: 150px;
+	text-align: center;
+	border: solid black 1px;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+
+.thick-line {
+	border: 1px #000 solid;
+}
+
+#facts {
+	display: flex;
+	justify-content: space-between;
+}
+
+#facts div {
+	flex-basis: 47%;
+}
+
+#facts .img-container {
+	text-align: right;
+}
+
+#facts .img-container img {
+	width: 100%;
+}
+
+#facts ul {
+	padding: 10px 0;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+#facts li {
+	margin: 10px 0;
+}
+
+/* Services page - MOBILE */
+@media only screen 
+  /* and (min-device-width: 320px)  */
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+	.service-card {
+		flex-basis: auto;
+	}
+
+	#facts {
+		flex-wrap: wrap;
+	}
+
+	#facts div {
+		flex-basis: 100%;
+	}
+
+}
+
+/* About page */
+
+.about-container header {
+	padding: 0;
+	/* display: block; */
+}
+
+.about-container .header-img {
+	height: 275px;
+	width: 100%;
+
+	background-image: 
+    linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+	url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#team img {
+	border-radius: 50%;
+}
+
+.team-leader {
+	display: flex;
+	justify-content: space-around;
+}
+
+.row-reverse {
+	flex-direction: row-reverse;
+}
+
+.team-leader img {
+	width:300px;
+}
+
+.team-container .team-title {
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+.team-container .team-title span {
+	font-size: 20px;
+}
+
+#team .member-description {
+	flex-basis: 50%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+}
+
+.team-member {
+	display: flex;
+	justify-content: center;
+}
+
+.team-member img {
+	width: 200px;
+}
+
+
+
+
 
 
