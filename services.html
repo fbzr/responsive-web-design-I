@@ -29,7 +29,7 @@
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container services-top-container">
 
     <img class="services-header-img" src="img/services-header.jpg" alt="Our services header image">
 
@@ -43,7 +43,7 @@
 
     <hr>
 
-    <div class="services-container padding-top">
+    <div class="services-middle-container padding-top">
       <!-- -------- CARDS --------------- -->
 
       <div class="service-card">
@@ -115,7 +115,7 @@
 
     <hr class="thick-line">
 
-    <section id="facts" class="padding-top">
+    <section id="facts" class="padding-top services-bottom-container">
       <div>
       <h4>Some Facts About Our Services</h4>
 
@@ -140,17 +140,19 @@
     </footer>
 </div>
 <script>
-  let myNav = document.getElementById("navbar");
+    let myNav = document.getElementById("navbar");  
 
-  window.onscroll = function() {
-    "use strict";
-    if (document.body.scrollTop >= 70 || document.documentElement.scrollTop >= 70) {
-      myNav.classList.add("scrolled");
-    } else {
-      myNav.classList.remove("scrolled");
-    }
-  };
-</script>
+    window.onscroll = function() {
+      "use strict";
+      const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+      if ((document.body.scrollTop >= 70 || document.documentElement.scrollTop >= 70) && width > 800) {
+        myNav.classList.add("scrolled");
+      } else {
+        myNav.classList.remove("scrolled");
+      }
+    };
+  </script>
 </body>
 
 </html>

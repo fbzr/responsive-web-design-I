@@ -242,7 +242,7 @@ footer p {
 	width: 100%;
 }
 
-.services-container {
+.services-middle-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -466,6 +466,23 @@ footer p {
 
     #contact {
         margin-top: 10%;
+    }
+
+    /* services.html */
+    .services-top-container {
+        margin-top: 5%;
+    }
+
+    .service-card {
+        flex-basis: 100%;
+    }
+
+    #facts div {
+        flex-basis: 100%;
+    }
+
+    #facts .img-container {
+        display: none;
     }
 }
 
