@@ -310,18 +310,11 @@ footer p {
 	/* display: block; */
 }
 
-.about-container .header-img {
+header img {
+	object-fit: cover;
+	object-position: center;
 	height: 275px;
 	width: 100%;
-
-	background-image: 
-    linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ),
-	url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 #team img {
@@ -329,7 +322,6 @@ footer p {
 }
 
 .team-leader {
-	display: flex;
 	justify-content: space-around;
 }
 
@@ -357,11 +349,6 @@ footer p {
 	flex-direction: column;
 	justify-content: center;
 	padding: 20px;
-}
-
-.team-member {
-	display: flex;
-	justify-content: center;
 }
 
 .team-member img {
@@ -413,7 +400,22 @@ footer p {
     
     .middle-img {
         margin: 15px 0;
-    }
+	}
+	
+	/* About */
+	.about-container header img {
+		height: 20vh;
+	}
+
+	.team-leader img {
+		width: 200px;
+		height: 200px;
+	}
+
+	.team-member img {
+		width: 150px;
+		height: 150px;
+	}
 } 
 
 /* MOBILE */

@@ -25,8 +25,7 @@
     <div class="container about-container">
 
         <header>
-            <div class="header-img"></div>
-
+            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="About Header Image">
             <div class="padding-top">
                 <h2>About Us</h2>
           
@@ -41,7 +40,7 @@
         <section id="team" class="padding-top">
             <h2>Our Team</h2>
             
-            <div class="team-leader row-reverse padding-top">
+            <div class="team-leader row-reverse padding-top center">
                 <div class="member-description">
                     <h2>Afia Caruso</h2>
                     <h3>The Boss</h3>
@@ -52,56 +51,56 @@
             
             <div class="team-container">
                 <h3 class="team-title padding-top">The Future Bosses<span><br>(If they survive to lambda)</span></h3>
-                <div class="team-member">
+                <div class="team-member center">
                     <div class="member-description">
                         <h4>Adrian Nasaruk</h4>
                         <p class="padding-top">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore cum corporis nisi, enim molestias asperiores esse, repellat ducimus reiciendis quis rerum quidem porro tenetur praesentium doloribus soluta incidunt mollitia quibusdam!</p>
                     </div>
                     <img src="https://ca.slack-edge.com/T4JUEB3ME-URV0CNKK4-f9eeae8eeff1-512" alt="">
                 </div>
-                <div class="team-member row-reverse padding-top">
+                <div class="team-member row-reverse padding-top center">
                     <div class="member-description">
                         <h4>Austin Glenn</h4>
                         <p class="padding-top">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore cum corporis nisi, enim molestias asperiores esse, repellat ducimus reiciendis quis rerum quidem porro tenetur praesentium doloribus soluta incidunt mollitia quibusdam!</p>
                     </div>
                     <img src="https://ca.slack-edge.com/T4JUEB3ME-URVM14R4M-518768c8f64e-512" alt="">
                 </div>
-                <div class="team-member padding-top">
+                <div class="team-member padding-top center">
                     <div class="member-description">
                         <h4>Dakota Marcinak</h4>
                         <p class="padding-top">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore cum corporis nisi, enim molestias asperiores esse, repellat ducimus reiciendis quis rerum quidem porro tenetur praesentium doloribus soluta incidunt mollitia quibusdam!</p>
                     </div>
                     <img src="https://ca.slack-edge.com/T4JUEB3ME-URQSGFBB4-c9e83f290c7f-512" alt="">
                 </div>
-                <div class="team-member row-reverse padding-top">
+                <div class="team-member row-reverse padding-top center">
                     <div class="member-description">
                         <h4>Fabricio Bezerra</h4>
                         <p class="padding-top">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore cum corporis nisi, enim molestias asperiores esse, repellat ducimus reiciendis quis rerum quidem porro tenetur praesentium doloribus soluta incidunt mollitia quibusdam!</p>
                     </div>
                     <img src="https://ca.slack-edge.com/T4JUEB3ME-US30UG28M-7a7d6aec1bf1-512" alt="">
                 </div>
-                <div class="team-member padding-top">
+                <div class="team-member padding-top center">
                     <div class="member-description">
                         <h4>Lai En Xie (Angela)</h4>
                         <p class="padding-top">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore cum corporis nisi, enim molestias asperiores esse, repellat ducimus reiciendis quis rerum quidem porro tenetur praesentium doloribus soluta incidunt mollitia quibusdam!</p>
                     </div>
                     <img src="https://ca.slack-edge.com/T4JUEB3ME-URFJXB8RF-9cd7db34e02e-512" alt="">
                 </div>
-                <div class="team-member row-reverse padding-top">
+                <div class="team-member row-reverse padding-top center">
                     <div class="member-description">
                         <h4>Michael Bailar</h4>
                         <p class="padding-top">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore cum corporis nisi, enim molestias asperiores esse, repellat ducimus reiciendis quis rerum quidem porro tenetur praesentium doloribus soluta incidunt mollitia quibusdam!</p>
                     </div>
                     <img src="https://ca.slack-edge.com/T4JUEB3ME-US7PF7MNC-735e45c76c27-512" alt="">
                 </div>
-                <div class="team-member padding-top">
+                <div class="team-member padding-top center">
                     <div class="member-description">
                         <h4>Reagan Barrington</h4>
                         <p class="padding-top">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore cum corporis nisi, enim molestias asperiores esse, repellat ducimus reiciendis quis rerum quidem porro tenetur praesentium doloribus soluta incidunt mollitia quibusdam!</p>
                     </div>
                     <img src="https://ca.slack-edge.com/T4JUEB3ME-US0N62Q9K-32dd65705c7f-512" alt="">
                 </div>
-                <div class="team-member row-reverse padding-top">
+                <div class="team-member row-reverse padding-top center">
                     <div class="member-description">
                         <h4>Steele James Helbling</h4>
                         <p class="padding-top">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore cum corporis nisi, enim molestias asperiores esse, repellat ducimus reiciendis quis rerum quidem porro tenetur praesentium doloribus soluta incidunt mollitia quibusdam!</p>
@@ -116,12 +115,14 @@
         <p>Copyright Great Idea! 2018</p>
       </footer>
 
-    <script>
-        let myNav = document.getElementById("navbar");
-  
+      <script>
+        let myNav = document.getElementById("navbar");  
+    
         window.onscroll = function() {
           "use strict";
-          if (document.body.scrollTop >= 70 || document.documentElement.scrollTop >= 70) {
+          const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    
+          if ((document.body.scrollTop >= 70 || document.documentElement.scrollTop >= 70) && width > 800) {
             myNav.classList.add("scrolled");
           } else {
             myNav.classList.remove("scrolled");
