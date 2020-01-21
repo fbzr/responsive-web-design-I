@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Great Idea - Responsive I</title>
 
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
@@ -11,6 +12,88 @@
 </head>
 
 <body>
-<!-- Use past code you created here for Great Idea Web Page or past solution for Great Idea Web Page HTML here! -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a class="nav-link" href="./services.html">Services</a>
+      <a class="nav-link" href="./#product">Product</a>
+      <a class="nav-link" href="./#vision">Vision</a>
+      <a class="nav-link" href="./#features">Features</a>
+      <a class="nav-link" href="./about.html">About</a>
+      <a class="nav-link" href="./#contact">Contact</a>
+      
+      <a class="nav-logo" href="./"></a>
+    </div>
+  </nav>
+
+  <div class="home-container container">
+    <header>
+      <div class="header-text">
+        <h1>Innovation<br>On<br>Demand</h1>
+        <a href="#features">Get Started</a>
+      </div>
+      <div class="header-image"></div>
+    </header>
+    
+    <hr>
+
+    <div class="flex-container">
+      <div id="features" class="two-columns padding-top">
+        <h4>Features</h4>
+        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+      </div>
+
+      <div id="about" class="two-columns padding-top">
+        <h4>About</h4>
+        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+      </div>
+    </div>
+
+    <div class="middle-img"></div>
+    
+    <div class="flex-container">
+      <div id="services" class="three-columns padding-top">
+        <h4>Services</h4>
+        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+      </div>
+
+      <div id="product" class="three-columns padding-top">
+        <h4>Product</h4>
+        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+      </div>
+    
+      <div id="vision" class="three-columns padding-top">
+        <h4>Vision</h4>
+        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+      </div>
+    </div>
+
+    <hr>
+    
+    <section id="contact" class="padding-top">
+      <h4>Contact</h4>
+      <p>123 Way 456 Street <br>
+        Somewhere, USA</p>
+      <p>1 (888) 888-8888</p>
+      <p>sales@greatidea.io</p>
+    </section>
+  
+    <footer>
+      <p>Copyright Great Idea! 2018</p>
+    </footer>
+  </div>
+  <script>
+    let myNav = document.getElementById("navbar");  
+
+    window.onscroll = function() {
+      "use strict";
+      const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+      if ((document.body.scrollTop >= 70 || document.documentElement.scrollTop >= 70) && width > 800) {
+        myNav.classList.add("scrolled");
+      } else {
+        myNav.classList.remove("scrolled");
+      }
+    };
+  </script>
 </body>
 </html>

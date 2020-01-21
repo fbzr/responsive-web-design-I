@@ -1,3 +1,555 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	margin: 0 70px;
+	padding-top: 70px;
+}
+
+/* Navbar */
+nav {
+	position: fixed;
+	width: 100%;
+	/* Set the same padding on the sides of the content of the page */
+	padding: 0 70px;
+	background-color: #fff;
+	z-index: 150;
+	transition: background-color 400ms linear;
+}
+
+#navbar.scrolled {
+	background-color: #9ff7ed !important;
+	transition: background-color 400ms linear;
+}
+
+.nav-container {
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+nav a {
+    height: 70px;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: #999;
+	transition: background-color 300ms;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+nav .nav-link:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+.nav-logo {
+	background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+	width: 100%;
+	padding-left: 8%;
+}
+
+/* Add hover effect */
+.home-container header a:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+header, footer {
+	position: relative;
+	padding: 4% 0;
+}
+
+.home-container header {
+	display: flex;
+	height: 500px;
+}
+
+.home-container header div {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-text {
+	flex-direction: column;
+	text-align: center;
+}
+
+.header-image {
+    background-image: url(../img/header-img.png);
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left;
+}
+
+header h1 {
+	font-size: 60px;
+}
+
+header a {
+	padding: 5px 40px;
+    background-color: #fff;
+	border: solid 1px #000;
+	text-decoration: none;
+	color: #000;
+
+	transition: background-color 300ms;
+}
+
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-container .two-columns {
+	flex-basis: 47%;
+}
+
+.flex-container .three-columns {
+	flex-basis: 30%;
+}
+
+.padding-top {
+	padding: 4% 0;
+}
+
+
+.middle-img {
+	width: 100%;
+	height: 250px;
+	background-image: url(../img/mid-page-accent.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact p {
+	margin-bottom: 15px; 
+}
+
+footer p {
+	text-align: center;
+}
+
+/* Services page */
+.services-header-img {
+	width: 100%;
+}
+
+.services-middle-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.service-card {
+	flex-basis: 47%;
+	
+	background-color: #f4f3f4;
+	border: solid black 1px;
+	margin: 30px 0;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.learn-more-btn {
+	text-decoration: none;
+	font-size: 14px;
+	background-color: #fff;
+	color: #000;
+	padding: 10px 0;
+	width: 150px;
+	text-align: center;
+	border: solid black 1px;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+
+.thick-line {
+	border: 1px #000 solid;
+}
+
+#facts {
+	display: flex;
+	justify-content: space-between;
+}
+
+#facts div {
+	flex-basis: 47%;
+}
+
+#facts .img-container {
+	text-align: right;
+}
+
+#facts .img-container img {
+	width: 100%;
+}
+
+#facts ul {
+	padding: 10px 0;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+#facts li {
+	margin: 10px 0;
+}
+
+/* About page */
+
+.about-container header {
+	padding: 0;
+}
+
+header img {
+	object-fit: cover;
+	object-position: center;
+	height: 275px;
+	width: 100%;
+}
+
+.team-container hr {
+	display: none;
+}
+
+#team img {
+	border-radius: 50%;
+}
+
+.team-leader {
+	justify-content: space-around;
+}
+
+.row-reverse {
+	flex-direction: row-reverse;
+}
+
+.team-leader img {
+	width:300px;
+}
+
+.team-container .team-title {
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+.team-container .team-title span {
+	font-size: 20px;
+}
+
+#team .member-description {
+	flex-basis: 50%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+}
+
+.team-member img {
+	width: 200px;
+}
+
+/* Tablet */
+@media screen and (max-width: 800px) {
+    /* index.html */
+    hr {
+        border-color: #000;
+    }
+    nav {
+        position: relative;
+        padding: 0 5%;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .nav-container .nav-logo {
+        order: -1;
+    }
+
+    .nav-container .nav-link {
+        width: 15%;
+    }
+
+    .container {
+        margin: 0 5%;
+        padding-top: 0;
+    }
+
+    .home-container header {
+        height: auto;
+        margin: 0 0 40px;
+    }
+
+    .home-container header .header-text {
+        width: 100%;
+    }
+
+    .home-container header .header-image {
+        display: none;
+    }
+    
+    .middle-img {
+        margin: 15px 0;
+	}
+	
+	/* About */
+	.about-container header img {
+		height: 20vh;
+	}
+
+	.team-leader img {
+		width: 200px;
+		height: 200px;
+	}
+
+	.team-member img {
+		width: 150px;
+		height: 150px;
+	}
+} 
+
+/* MOBILE */
+@media screen and (max-width: 500px) {
+    /* index.html */
+    nav {
+        padding: 0;
+    }
+
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-container a {
+        border-bottom: #000 1px solid;
+    }
+    
+    .nav-container .nav-link {
+        width: 100%;
+    }
+
+    .container {
+        padding-top: 0;
+    }
+
+    .home-container header {
+        height: auto;
+        margin: 50px 0;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        margin: 10% 0;
+    }
+
+    .flex-container #about {
+        margin: 7% 0 0; 
+    }
+
+    .flex-container #product, 
+    .flex-container #vision
+    {
+        margin: 12% 0 0;
+    }
+
+    .middle-img {
+        height: 100px;
+        margin: 0;
+    }
+
+    #contact {
+        margin-top: 10%;
+    }
+
+    /* services.html */
+    .services-top-container {
+        margin-top: 5%;
+    }
+
+    .service-card {
+        flex-basis: 100%;
+    }
+
+    #facts div {
+        flex-basis: 100%;
+    }
+
+    #facts .img-container {
+        display: none;
+	}
+	
+	/* about.html */
+	.about-container {
+		margin-top: 5%;
+	}
+
+	.about-container header img {
+		height: 87px;
+	}
+
+	#team {
+		margin-top: 30px;
+	}
+
+	#team h2 {
+		text-align: center;
+	}
+
+	.team-leader {
+		position: relative;
+		/* margin-top: 50px; */
+	}
+
+	.team-leader img {
+		position: absolute;
+		width: 130px;
+		height: 130px;
+		right: 10%;
+		top: 2%;
+	}
+
+	.team-leader p {
+		margin-top: 30px;
+	}
+
+	#team .member-description {
+		flex-basis: 100%;
+	}
+
+	.team-member {
+		flex-wrap: wrap;
+	}
+	.row-reverse {
+		flex-direction: row;
+	}
+
+	.team-member img {
+		width: 120px;
+		height: 120px;
+		margin-bottom: 50px;
+	}
+
+	.team-container hr {
+		display: block;
+	}
+
+	.team-container hr {
+		border-color: transparent;
+		border-top-color: #ccc;
+	}
+}
+
+
 
 
